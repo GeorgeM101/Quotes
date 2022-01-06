@@ -1,0 +1,14 @@
+.container {
+  margin-top: 3em;
+  border: 2px solid black;
+  width: 450px;
+}
+div {
+  text-align: center;
+}
+#author {
+  width: em;
+}
+#quote {
+  height: 100px;
+}

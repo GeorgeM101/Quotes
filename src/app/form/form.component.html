@@ -2,10 +2,10 @@
     <form userForm = "ngForm" ngSubmit = "submitQuote">
         <div class="form-group">
             <label for="author">Author's Name</label>
-            <input type="text"    class="form-control" id="author" required ><br><br>
-            <input type="text" class="form-control"name="quote" id=""> <br><br>
+            <input type="text" ngModel name="authorName"  class="form-control" id="author" required ><br><br>
+            <input type="text" class="form-control"name="quote" id="quote"> <br><br>
             <input type="date"> <br><br>
-            <button class="button btn-danger"id="btn">Add Quote</button>
+            <button class="button btn-primary"id="btn">Add Quote</button><br><br>
         </div>
     </form>
 </div>
