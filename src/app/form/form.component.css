@@ -1,14 +1,11 @@
 .container {
-  margin-top: 3em;
-  border: 2px solid black;
-  width: 450px;
-}
-div {
+  width: 350px;
   text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-#author {
-  width: em;
-}
-#quote {
-  height: 100px;
+#btn {
+  width: 150px;
+  height: 30px;
+  border: none;
 }

@@ -5,7 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css']
 })
-export class FormComponent {
+export class FormComponent  {
+submit(){
+  console.log("quote added ");
+  
+}
+ 
 
 }
-
