@@ -9,21 +9,21 @@ import { Quote } from '@angular/compiler'
 })
 export class QuoteDetailsComponent {
 
-    @Input() quotes: Quote[] = [];
-    @Output() isComplete = new EventEmitter<boolean>();
+    // @Input() quotes: Quote[] = [];
+    // @Output() isComplete = new EventEmitter<boolean>();
   
-    quoteComplete(complete:boolean){
-      this.isComplete.emit(complete);
-    }
-    upVotes:number=0;
-    upVote(){
-      this.upVotes=this.upVotes++;
-    }
+    // quoteComplete(complete:boolean){
+    //   this.isComplete.emit(complete);
+    // }
+    // upVotes:number=0;
+    // upVote(){
+    //   this.upVotes=this.upVotes++;
+    // }
   
-    downVotes:number=0;
-    downVote(){
-      this.downVotes=this.downVotes++;
-    }
+    // downVotes:number=0;
+    // downVote(){
+    //   this.downVotes=this.downVotes++;
+    // }
     
     
   
