@@ -1,5 +1,7 @@
-<!-- <p>{{quotes.description}}</p>
-<p>Date {{quotes.completeDate|dateCount}} days</p>
-<button (click)= 'quoteComplete(true)' id="btn">Remove Quote</button><hr>
-<button (click)='upVote()' id="up"> upVotes <span>{{upVotes}}</span></button>
-<button (click)='downVote()' id="down"> downVotes <span>{{downVotes}}</span></button> -->
+<div class="card-body">
+    <!-- <p>{{quotes.description}}</p>
+<p>Date {{quotes.completeDate|dateCount}} days</p> -->
+<button (click)= 'quoteComplete(true)' id="btn" class="btn btn-danger">Remove Quote</button>
+<button (click)='upVote()' id="up" class="btn btn-primary"> upVotes <span>{{upVotes}}</span></button>
+<button (click)='downVote()' id="down" class="btn btn-secondary"> downVotes <span>{{downVotes}}</span></button>
+</div>
