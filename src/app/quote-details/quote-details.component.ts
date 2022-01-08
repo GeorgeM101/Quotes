@@ -25,9 +25,6 @@ export class QuoteDetailsComponent {
       this.downVotes=this.downVotes++;
     }
     
-    
-  
-  
 }
 
  
