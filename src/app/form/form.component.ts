@@ -1,4 +1,5 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import { Quote } from '../quote';
 
 
 @Component({
@@ -7,13 +8,12 @@ import { Component, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent  {
-  @Output() emitQuote= new EventEmitter()
+  newQuote = new Quote(0,"","",new Date());
+  @Output() addQuote = new EventEmitter<Quote>();
 
-  authorName:any
-  addQuote:string[]=[]
-   Submit(){
-     this.authorName
-   }
+  submitQuote(){
+this.addQuote.emit(this.newQuote);
+  }
   
 }
  
