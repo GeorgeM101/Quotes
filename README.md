@@ -1,4 +1,5 @@
 # Quotes
+In this project, users are able to upload a quote, upvote or downvote a quoate and also delete a quote.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
 
