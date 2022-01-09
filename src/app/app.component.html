@@ -1,5 +1,5 @@
 <div class="container mt-4">
-    <h1>Millenial Goals</h1>
+    <h1>Famous Quotes</h1>
   
     <div class="row">
       <div class="col-md-6">
@@ -8,15 +8,16 @@
             <h6 id={{i}} appStrikethrough>{{quote.name}} posted {{quote.completeDate|date|uppercase}}</h6>
             <button (click)='toggleDetails(i)' class="btn btn-primary">Read Quote</button>
           </div>
-  
+          <br>
+          <br>
           <div *ngIf='quote.showDescription'>
-            <!-- <app-quote-details  [quote]='uotes' (isComplete) = 'deleteQuote($event,i)'></app-quote-details> -->
+            <br>
+            <app-quote-details  [quote]='quotes' (isComplete) = 'deleteQuote($event,i)'></app-quote-details>
           </div>
         </div>
       </div>
       <div class="col">
         <app-form (addQuote)="addNewQuote($event)"></app-form>
       </div>
-    </div>
-   
+    </div> 
   </div> 
