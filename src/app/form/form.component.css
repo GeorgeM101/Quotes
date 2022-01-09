@@ -1,6 +1,9 @@
-.container {
+.container-fluid {
   margin-top: 150px;
-  width: 350px;
+  /* background-image: url(./assets/images/istockphoto-1031937404-170667a.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* width: 350px; */
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
