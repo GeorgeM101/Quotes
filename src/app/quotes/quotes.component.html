@@ -6,16 +6,17 @@
         <div class="mr-4 card" *ngFor='let quote of quotes;let i = index'>
         
   
-          <div *ngIf='quote.showDescription'>
+          <div *ngIf='quote.showDescription '>
             <app-quote-details  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-details>
           </div>
         </div>
       </div>
+      <p *ngIf='quote.length > 5'>Maximum quote limit </p>
+
       <div class="col">
         <app-form (addQuote)="addNewQuote($event)"></app-form>
       </div>
     </div>
    
   </div> 
-<app-quote-details></app-quote-details>
 

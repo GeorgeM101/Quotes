@@ -17,7 +17,7 @@ export class QuotesComponent {
 
   deleteQuote(isComplete:any, index:any){
     if (isComplete) {
-      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
+      let toDelete = confirm(`Confirm you want to delete ${this.quotes[index].name}?`)
 
       if (toDelete){
         this.quotes.splice(index,1)

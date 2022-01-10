@@ -12,7 +12,8 @@
             <pre></pre>
         </div>
         <div class="form-group">
-  
+          <app-quotes></app-quotes>
+
             <label for="description">Quote</label>
             <textarea class="form-control" id="description" rows="4" [(ngModel)]="newQuote.description" name="description" #description="ngModel" placeholder="Enter your quote here"required></textarea>
             <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
@@ -29,7 +30,7 @@
             </div>
         </div>
         <br>
-        <button type="submit" class="btn btn-success">Add Quote</button>
+        <button type="submit" class="btn btn-success" id="btn">Add Quote</button>
     </form>
     </div>
   
