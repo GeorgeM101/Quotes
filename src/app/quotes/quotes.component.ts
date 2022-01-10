@@ -17,7 +17,7 @@ export class QuotesComponent {
 
   deleteQuote(isComplete:any, index:any){
     if (isComplete) {
-      let toDelete = confirm(`Confirm you want to delete ${this.quotes[index].name}?`)
+      let toDelete = confirm(`This ${this.quotes[index].name}? will be deleted`)
 
       if (toDelete){
         this.quotes.splice(index,1)
@@ -36,7 +36,7 @@ export class QuotesComponent {
   }
   addNewQuote(quote:any){
     let quoteLength = this.quotes.length;
-    quote.id = quoteLength++;
+    quote.id = quoteLength+1;
     quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote)
   }

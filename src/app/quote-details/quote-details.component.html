@@ -1,5 +1,6 @@
     <p>{{quote.description}}</p>
     <p>Quote was added in {{quote.completeDate|dateCount}} days</p>
-    <button (click)= 'quoteComplete(true)' id="btn" class="btn btn-danger">Remove quote</button><br>
     <button (click)='upVote()' id="up" class="btn btn-primary">  upVotes <span>{{upVotes}}</span></button>
     <button (click)='downVote()' id="down" class="btn btn-secondary"> downVotes <span>{{downVotes}}</span></button>
+    <button (click)= 'quoteComplete(true)' id="btn" class="btn btn-danger">Remove quote</button><br>
+   
