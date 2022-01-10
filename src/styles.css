@@ -1,1 +1,5 @@
-
+.container {
+  background-image: url(./assets/images/istockphoto-1031937404-170667a.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

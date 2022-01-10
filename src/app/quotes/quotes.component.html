@@ -1,6 +1,6 @@
 <div class="container">
-    <h1>Inspiring Quotes</h1>
-    <hr>
+    <h1 style="color:cadetblue">Inspiring Quotes</h1>
+    
     <div class="row">
       <div class="col-md-6">
         <div class="mr-4 card" *ngFor='let quote of quotes;let i = index'>
@@ -9,11 +9,12 @@
           </div>
         </div>
       </div>
-      <p *ngIf='quotes.length > 5'>Maximum quote limit </p>
 
       <div class="col">
         <app-form (addQuote)="addNewQuote($event)"></app-form>
       </div>
     </div>
   </div> 
+  
+
 

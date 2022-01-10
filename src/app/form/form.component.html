@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid col-md-6">
     <h4 class="text-center text-primary">Add a Quote</h4>
     <br>
     <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
@@ -12,7 +12,6 @@
             <pre></pre>
         </div>
         <div class="form-group">
-          <app-quotes></app-quotes>
 
             <label for="description">Quote</label>
             <textarea class="form-control" id="description" rows="4" [(ngModel)]="newQuote.description" name="description" #description="ngModel" placeholder="Enter your quote here"required></textarea>
@@ -31,10 +30,11 @@
         </div>
         <br>
         <button type="submit" class="btn btn-success" id="btn">Add Quote</button>
+        <br>
+        <br>
     </form>
-    <app-quotes></app-quotes>
-
     </div>
+    <pre></pre>
 
   
   

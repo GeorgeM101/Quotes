@@ -9,8 +9,8 @@ import { Quote } from '../quote'
 export class QuotesComponent {
   quotes:Quote [] = [
     
-    new Quote(1, 'Life', 'Do what is right according to you and wh',new Date(2022,1,3)),
-    new Quote(2,'Wealth','Cut off things that drain you',new Date(2022,1,8)),
+    new Quote(1, 'Life', 'Kindness goes a long way',new Date(2022,1,3)),
+    new Quote(2,'Wealth','Cut off things that drain you shift your focus to what builds you',new Date(2022,1,8)),
 
   ];
   
