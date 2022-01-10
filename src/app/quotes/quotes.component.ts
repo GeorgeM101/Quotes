@@ -9,15 +9,15 @@ import { Quote } from '../quote'
 export class QuotesComponent {
   quotes:Quote [] = [
     
-    new Quote(1, 'Life', 'Kindness goes a long way',new Date(2022,1,3)),
-    new Quote(2,'Wealth','Cut off things that drain you shift your focus to what builds you',new Date(2022,1,8)),
+    new Quote(1, 'Life', 'Kindness goes a long way',new Date(2022,1,4)),
+    new Quote(2,'Wealth','Cut off things that drain you shift your focus to what builds you',new Date(2022,1,3)),
 
   ];
   
 
   deleteQuote(isComplete:any, index:any){
     if (isComplete) {
-      let toDelete = confirm(`This ${this.quotes[index].name}? will be deleted`)
+      let toDelete = confirm(`Confirm you want to delete quote by ${this.quotes[index].name}? `)
 
       if (toDelete){
         this.quotes.splice(index,1)
@@ -31,9 +31,7 @@ export class QuotesComponent {
     }
   }
   
-  toggleDetails(index:any){
-    this.quotes[index].showDescription = !this.quotes[index].showDescription;
-  }
+ 
   addNewQuote(quote:any){
     let quoteLength = this.quotes.length;
     quote.id = quoteLength+1;

@@ -1,13 +1,9 @@
-<div class="container">
-    <h1 style="color:cadetblue">Inspiring Quotes</h1>
-    
+<div class="container mt-5">
+    <h1 style="color:rgb(51, 81, 82); font-weight:bold;" class="text-center">Inspiring Quotes</h1>
     <div class="row">
       <div class="col-md-6">
         <div class="mr-4 card" *ngFor='let quote of quotes;let i = index'>
-          <div *ngIf='quote.showDescription '>
             <app-quote-details [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
-
-          </div>
         </div>
 
       </div>
