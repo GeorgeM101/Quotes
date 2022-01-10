@@ -3,7 +3,7 @@
     
     <div class="row">
       <div class="col-md-6">
-        <div class="mr-4 card" *ngFor='let quote of quotes;let i = index'>
+        <div class="mr-2 card" *ngFor='let quote of quotes;let i = index'>
           <div *ngIf='quote.showDescription '>
             <app-quote-details  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-details>
           </div>
