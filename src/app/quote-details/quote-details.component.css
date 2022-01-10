@@ -1,0 +1,8 @@
+#btn {
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+}
+.label {
+  text-transform: uppercase;
+}

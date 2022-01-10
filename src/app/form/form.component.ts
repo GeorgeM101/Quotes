@@ -14,7 +14,6 @@ export class FormComponent  {
   submitQuote(){
 this.addQuote.emit(this.newQuote);
   }
-  
 }
  
 
