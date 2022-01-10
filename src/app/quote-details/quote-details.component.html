@@ -1,7 +1,9 @@
+  <div>
     <p>{{quote.description}}</p>
-<p>This goal was posted in {{quote.completeDate|dateCount}} days</p>
-<button (click)= 'quoteComplete(true)' id="btn">Delete</button><hr>
-<button (click)='upVote()' id="up"> upVotes <span>{{upVotes}}</span></button>
-<button (click)='downVote()' id="down"> downVotes <span>{{downVotes}}</span></button>
-
-
+    <p>This goal was posted in {{quote.completeDate|dateCount}} days</p>
+    <button (click)= 'quoteComplete(true)' id="btn">Delete</button><hr>
+    <button (click)='upVote()' id="up"> upVotes <span>{{upVotes}}</span></button>
+    <button (click)='downVote()' id="down"> downVotes <span>{{downVotes}}</span></button>
+    
+  </div>
+ 
